@@ -467,7 +467,7 @@ const Contact = () => {
           transition={{ delay: 0.3 }}
           className="mt-16"
         >
-          <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
+          <div className="bg-linear-to-r from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Need Immediate Assistance?
             </h3>
