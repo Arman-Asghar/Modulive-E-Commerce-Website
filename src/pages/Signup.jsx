@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// src/pages/Signup.jsx
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -81,7 +80,6 @@ const Signup = () => {
       
       toast.success('Account created successfully!');
       navigate('/');
-    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error('Registration failed. Please try again.');
     }
