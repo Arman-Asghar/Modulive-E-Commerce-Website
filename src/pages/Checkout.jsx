@@ -1,4 +1,4 @@
-// src/pages/Checkout.jsx
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
@@ -317,7 +317,7 @@ const Checkout = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="flex-grow">
+                    <div className="grow">
                       <h4 className="font-medium text-gray-900">{item.name}</h4>
                       <p className="text-sm text-gray-600">Qty: {item.quantity}</p>
                     </div>
