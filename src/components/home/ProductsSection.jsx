@@ -1,4 +1,4 @@
-// src/components/home/ProductsSection.jsx
+/* eslint-disable no-unused-vars */
 import React, { useState, useMemo } from 'react';
 import ProductCard from '../products/ProductCard';
 import { motion } from 'framer-motion';

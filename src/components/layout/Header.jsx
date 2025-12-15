@@ -1,4 +1,4 @@
-// src/components/layout/Header.jsx
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
