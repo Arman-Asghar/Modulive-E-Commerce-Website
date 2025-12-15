@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/pages/ProductDetails.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -29,7 +30,6 @@ const ProductDetails = () => {
 
   useEffect(() => {
     // Simulate API call
-    setLoading(true);
     setTimeout(() => {
       const foundProduct = products.find(p => p.id === id);
       if (foundProduct) {
@@ -132,7 +132,7 @@ const ProductDetails = () => {
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 ${
+                    className={`shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 ${
                       selectedImage === index 
                         ? 'border-green-600' 
                         : 'border-transparent'
@@ -246,7 +246,7 @@ const ProductDetails = () => {
                     >
                       <Minus size={20} />
                     </button>
-                    <span className="px-4 py-2 text-lg font-medium min-w-[60px] text-center">
+                    <span className="px-4 py-2 text-lg font-medium min-w-15 text-center">
                       {quantity}
                     </span>
                     <button

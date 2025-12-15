@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/pages/Products.jsx
 import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
@@ -169,7 +170,7 @@ const Products = () => {
                     alt={product.name}
                     className="w-full md:w-48 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6"
                   />
-                  <div className="flex-grow">
+                  <div className="grow">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
                       {product.name}
                     </h3>
