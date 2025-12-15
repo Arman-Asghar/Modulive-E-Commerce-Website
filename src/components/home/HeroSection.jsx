@@ -1,4 +1,4 @@
-// src/components/home/HeroSection.jsx
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';

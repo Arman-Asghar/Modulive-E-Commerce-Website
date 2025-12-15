@@ -1,4 +1,4 @@
-// src/components/home/Newsletter.jsx
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'react-hot-toast';
