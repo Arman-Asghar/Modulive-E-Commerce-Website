@@ -1,4 +1,4 @@
-// src/pages/Cart.jsx
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -89,7 +89,7 @@ const Cart = () => {
                       </div>
 
                       {/* Product Info */}
-                      <div className="flex-grow">
+                      <div className="grow">
                         <div className="flex justify-between">
                           <div>
                             <h3 className="text-lg font-medium text-gray-900">
