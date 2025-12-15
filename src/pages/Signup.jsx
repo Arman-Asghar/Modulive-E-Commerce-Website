@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // src/pages/Signup.jsx
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -10,27 +11,37 @@ import { toast } from 'react-hot-toast';
 import { loginSuccess } from '../store/authSlice';
 import { Mail, Lock, User, Check, Eye, EyeOff } from 'lucide-react';
 
-const schema = yup.object().shape({
+const schema = yup.object({
   name: yup.string().required('Name is required'),
-  email: yup.string().email('Invalid email').required('Email is required'),
-  password: yup.string()
+
+  email: yup
+    .string()
+    .email('Invalid email')
+    .required('Email is required'),
+
+  password: yup
+    .string()
     .min(8, 'Password must be at least 8 characters')
     .matches(/[A-Z]/, 'Password must contain at least one uppercase letter')
     .matches(/[a-z]/, 'Password must contain at least one lowercase letter')
     .matches(/[0-9]/, 'Password must contain at least one number')
     .required('Password is required'),
-  confirmPassword: yup.string()
-    .oneOf([yup.ref('password'), null], 'Passwords must match')
+
+  confirmPassword: yup
+    .string()
+    .oneOf([yup.ref('password')], 'Passwords must match')
     .required('Confirm password is required'),
-  agreeToTerms: yup.boolean()
+
+  agreeToTerms: yup
+    .boolean()
     .oneOf([true], 'You must agree to the terms and conditions'),
 });
 
+
 const usePasswordStrength = (watch) => {
-  const password = watch('password', '');
-  
+  const password = watch('password') || '';
+
   return {
-    password,
     strength: {
       length: password.length >= 8,
       uppercase: /[A-Z]/.test(password),
@@ -39,6 +50,7 @@ const usePasswordStrength = (watch) => {
     },
   };
 };
+
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -50,7 +62,7 @@ const Signup = () => {
     resolver: yupResolver(schema),
   });
 
-  const { password, strength: passwordStrength } = usePasswordStrength(watch);
+  const { strength: passwordStrength } = usePasswordStrength(watch);
 
   const onSubmit = async (data) => {
     try {
@@ -69,6 +81,7 @@ const Signup = () => {
       
       toast.success('Account created successfully!');
       navigate('/');
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error('Registration failed. Please try again.');
     }
