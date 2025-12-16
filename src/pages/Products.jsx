@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// src/pages/Products.jsx
 import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import ProductCard from '../components/products/ProductCard';

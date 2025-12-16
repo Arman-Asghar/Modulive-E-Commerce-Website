@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import HeroSection from '../components/home/HeroSection';
 import ProductsSection from '../components/home/ProductsSection';

@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// src/pages/ProductDetails.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
