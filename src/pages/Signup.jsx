@@ -117,7 +117,7 @@ const Signup = () => {
                   className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 ${
                     errors.name ? 'border-red-500' : 'border-gray-300'
                   }`}
-                  placeholder="John Doe"
+                  placeholder="arman jutt"
                 />
               </div>
               {errors.name && (

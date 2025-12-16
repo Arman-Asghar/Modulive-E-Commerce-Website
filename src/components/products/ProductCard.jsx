@@ -42,9 +42,9 @@ const ProductCard = ({ product }) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handleAddToCart}
-            className="absolute bottom-4 right-4 bg-white p-3 rounded-full shadow-lg hover:bg-green-50 transition-colors"
+            className="absolute bottom-4 right-4 bg-white p-3 rounded-full shadow-lg hover:bg-green-100 transition-colors"
           >
-            <ShoppingCart className="text-green-600" size={20} />
+            <ShoppingCart className="text-green-600 cursor-pointer" size={20} />
           </motion.button>
         </div>
 
